@@ -16,7 +16,7 @@
 - It is testable by Layers
 - They are testable
 - Dependecy are from Lower level to Higher level only
-- Ex. Presentation depend on Domain, Domain dependent on Data Layer. But not reversable.
+- Ex. Presentation depend on Domain, Domain dependent on Data Layer. Data Layer depend on Modules. But not reversable.
   
 # MVP
 Model View Presenter
