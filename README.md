@@ -47,7 +47,8 @@ Model View Presenter
   - Model (UseCase or Interactor) : Represent application specific flow. Not for domain. What the presentation layer does.
 - Domain Layer : Know about Plain Java object. Bussiness entity. Handle request comes from Presentation Layer. Fetch data from Data Layer and pass to Presentation Layer.
 - Data Layer : DB and API Related. Has singleton classes.
-
+- Each layer can have Test case (Seperation of Concern)
+  
 ### Dependancy of Layers
 - Presentation Layer depend on Domain Layer, Domain Layer depend on Data Layer
 - It is transitive. Means, Presentation Layer know about Domain Layer, Domain Layer know about Data Layer but Data Layer don't know about Domain Layer and Domain Layer don't know about Presentation Layer
