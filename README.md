@@ -4,23 +4,33 @@ Model View Presenter
 ![mvp-clean](https://github.com/NrupParikh/MVP/assets/108717119/68400355-3881-40e7-9e2f-1f099a19cf81)
 
 
-### Why
+### Clean Architecture Layers
+
+![clean_architecture_layers](https://github.com/NrupParikh/MVP/assets/108717119/1b1e5f28-f21b-49b3-b22a-5f64ba998279)
+
+### Clean Architecture
+
+![clean_architecture](https://github.com/NrupParikh/MVP/assets/108717119/dfe069bc-4f3c-4957-a50d-5840bed9a160)
+
+
+### Why to use MVP ?
 - Seperation of Concern
 - Easy to test each layer
 
 - Presentation Layer > UseCase (Model) > Domain Layer (Handle request comes from Presentation and retrive data from Data Layer) > Data Layer (DB or API Singletons)
 - UI > UserCase > Domain >Data [ db or API ]
 
-### For What
+### Which Layer For What?
 
 - Presentation Layer : Know about UI , Android Related
 - Domain Layer : Know about Plain Java object. Bussiness entity
 - Data Layer : DB and API Related
 
-### Dependancy
+### Dependancy of Layers
 - Presentation Layer depend on Domain Layer, Domain Layer depend on Data Layer
 - It is transitive. Means, Presentation Layer know about Domain Layer, Domain Layer know about Data Layer but Data Layer don't know about Domain Layer and Domain Layer don't know about Presentation Layer
 
+### How it works?
 - We make request from Presentation Layer. Ex. button click
 - It go to Domain layer then Data layer and get data from it and pass back to our UI
 - Presenter handle everything in background using AsyncTask or RxJava  (Asyncronous) and post on UI
