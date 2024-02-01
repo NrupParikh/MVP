@@ -8,7 +8,16 @@
 - About how we are building
 - Smaller picture
 - How to plan and structure your code, how to implement
-   
+
+### What is Clean Architecture
+- Seperation of concerns
+- It is Multi Layered
+- It is Independent of framework, database, Layers, Interfaces
+- It is testable by Layers
+- They are testable
+- Dependecy are from Lower level to Higher level only
+- Ex. Presentation depend on Domain, Domain dependent on Data Layer. But not reversable.
+  
 # MVP
 Model View Presenter
 
