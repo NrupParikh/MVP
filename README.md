@@ -1,3 +1,14 @@
+### What is software Architecture
+- About what the system does, what we are buiding
+- High level abstraction of Software Design
+- Represent biger picture
+- Choice of frameworks, standards and High level principals
+  
+### What is Software Design
+- About how we are building
+- Smaller picture
+- How to plan and structure your code, how to implement
+   
 # MVP
 Model View Presenter
 
