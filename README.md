@@ -40,11 +40,13 @@ Model View Presenter
 - Presentation Layer > UseCase (Model) > Domain Layer (Handle request comes from Presentation and retrive data from Data Layer) > Data Layer (DB or API Singletons)
 - UI > UserCase > Domain >Data [ db or API ]
 
-### Which Layer For What?
+### Which Layer For What in MVP Clean Architecture?
 
-- Presentation Layer : Know about UI , Android Related
-- Domain Layer : Know about Plain Java object. Bussiness entity
-- Data Layer : DB and API Related
+- Presentation Layer : Know about UI , Android Related.  UI / View / Fragment / Activity (java or Kotlin class)
+  - Presenter handle everything in background using (RxJava or AsyncTask) and transfer output on UI
+  - Model (UseCase or Interactor) : Represent application specific flow. Not for domain. What the presentation layer does.
+- Domain Layer : Know about Plain Java object. Bussiness entity. Handle request comes from Presentation Layer. Fetch data from Data Layer and pass to Presentation Layer.
+- Data Layer : DB and API Related. Has singleton classes.
 
 ### Dependancy of Layers
 - Presentation Layer depend on Domain Layer, Domain Layer depend on Data Layer
