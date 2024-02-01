@@ -27,6 +27,7 @@ Model View Presenter
 - Model called as UseCase or Interactor, which represent app related bussiness case. Not to domain specific.
 - Domain layer handle the request comes from Presentaiton layer and return the data read from Datra Layer
 - Data layer contains DB or API related singletons
+- Each layer can have Test class to run seperately
 
 ### Reference
 
